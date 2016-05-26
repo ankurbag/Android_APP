@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+function captureLicencePlate()
+{
+    JSInterface.checkPermission();
+}
+</script>
+<div class="container">
+    <h2>PROCLASS</h2>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Section1</a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="email">First Name:</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter first name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="lname">Last Name:</label>
+                          <div class="col-sm-10">          
+                            <input type="text" class="form-control" id="lname" placeholder="Enter last name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="company">Company:</label>
+                          <div class="col-sm-10">          
+                            <input type="text" class="form-control" id="company" placeholder="Enter company name">
+                          </div>
+                        </div>
+                         <div class="form-group">
+                          <label class="control-label col-sm-2" for="phno">Phone number:</label>
+                          <div class="col-sm-10">          
+                            <input type="text" class="form-control" id="phno" placeholder="Enter phone number">
+                          </div>
+                        </div>
+                        <div class="form-group">        
+                          <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                          </div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Section2</a>
+                </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                          <label class="control-label col-sm-12" for="email">Capture License Plate:
+                                <button class="btn btn-success btn-xs" onclick=captureLicencePlate() >
+                              <span class="glyphicon glyphicon-camera"></span> 
+                            </button>
+                          </label>
+                          
+                          </div>
+                          <div class="form-group">
+                          <label class="control-label col-sm-12" for="email">Capture VIN:
+                                <a href="#" class="btn btn-success btn-xs">
+                              <span class="glyphicon glyphicon-camera"></span> 
+                            </a>
+                          </label>
+                          
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
